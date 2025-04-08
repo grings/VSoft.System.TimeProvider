@@ -1,0 +1,97 @@
+{
+ "metadata": {
+  "id": "VSoft.System.TimeProvider",
+  "version": "1.0.0",
+  "description": "This simple unit provides an abstraction over TDateTime.Now and TDateTime.NowUTC that makes it easier to write testable code.",
+  "authors": "Vincent Parrett",
+  "projectUrl": "https://github.com/VSoftTechnologies/VSoft.System.TimeProvider",
+  "repositoryUrl": "https://github.com/VSoftTechnologies/VSoft.System.TimeProvider",
+  "license": "Apache-2.0",
+  "copyright": "Vincent Parret",
+  "tags": "datetime testing",
+  "readme": "README.md"
+ },
+ "targetPlatforms": [
+  {
+   "compiler": "XE3",
+   "platforms": "Win32, Win64, OSX32",
+   "template": "default"
+  },
+  {
+   "compiler": "XE4",
+   "platforms": "Win32, Win64, OSX32",
+   "template": "default"
+  },
+  {
+   "compiler": "XE5",
+   "platforms": "Win32, Win64, OSX32",
+   "template": "default"
+  },
+  {
+   "compiler": "XE6",
+   "platforms": "Win32, Win64, OSX32",
+   "template": "default"
+  },
+  {
+   "compiler": "XE7",
+   "platforms": "Win32, Win64, OSX32",
+   "template": "default"
+  },
+  {
+   "compiler": "XE8",
+   "platforms": "Win32, Win64, OSX32",
+   "template": "default"
+  },
+  {
+   "compiler": "10.0",
+   "platforms": "Win32, Win64, OSX32",
+   "template": "default"
+  },
+  {
+   "compiler": "10.1",
+   "platforms": "Win32, Win64, OSX32",
+   "template": "default"
+  },
+  {
+   "compiler": "10.2",
+   "platforms": "Win32, Win64, OSX32",
+   "template": "default"
+  },
+  {
+   "compiler": "10.3",
+   "platforms": "Win32, Win64, OSX32, OSX64, LinuxIntel64",
+   "template": "default"
+  },
+  {
+   "compiler": "10.4",
+   "platforms": "Win32, Win64, OSX64, LinuxIntel64",
+   "template": "default"
+  },
+  {
+   "compiler": "11.0",
+   "platforms": "Win32, Win64, OSX64, OSXARM64, LinuxIntel64",
+   "template": "default"
+  },
+  {
+   "compiler": "12.0",
+   "platforms": "Win32, Win64, OSX64, OSXARM64, LinuxIntel64",
+   "template": "default"
+  }
+ ],
+ "templates": [
+  {
+   "name": "default",
+   "source": [
+    {
+     "src": "source\\*.pas",
+     "dest": "source"
+    }
+   ],
+   "searchPaths": [
+    {
+     "path": "Source"
+    }
+   ]
+  }
+ ]
+}
