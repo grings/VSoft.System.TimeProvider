@@ -52,10 +52,12 @@ procedure TDiscountTestFixture.Test_Discount_is_50_on_Tuesdays;
 var
    discount : integer;
    dateTimeProviderMock : Mock<IDateTimeProvider>;
+   mockNow L : TDateTime;
 begin
    //arrange
+    mockNow := EncodeDate(2025,4,1); 
     dateTimeProviderMock := TMock<IDateTimeProvider>.Create;
-    dateTimeProviderMock.Setup.WillReturn(3).When.DayOfWeek();
+    dateTimeProviderMock.Setup.WillReturn(mockNow).When.Now();
   //act
     discount := FDiscountCalculator.GetDiscountForToday(dateTimeProviderMock);
   //assert
