@@ -2,7 +2,7 @@
 
 This simple unit provides an abstraction over TDateTime.Now and TDateTime.NowUTC that makes it easier to write testable code.
 
-Code that directly references `Now` or `NowUTC` are very difficult to unit test. Imagine you have a function that uses one of the many helper methods on `TDateTime.Now`, for example :
+Code that directly references `Now` or `NowUTC` is very difficult to unit test. Imagine you have a function that uses one of the many helper methods on `TDateTime.Now`, for example :
 
 ````Delphi
 function TDiscountCalculator.GetDiscountForToday : integer;
