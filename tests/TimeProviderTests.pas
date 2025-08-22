@@ -11,9 +11,9 @@ type
   TTestTimeProviderFixture = class
   public
     [Test]
-    procedure Test_Discount_is_50_on_Tuesdays_UsingMock;
+    procedure Discount_is_50_on_Tuesdays_UsingMock;
     [Test]
-    procedure Test_Discount_is_50_on_Tuesdays_UsingImpl;
+    procedure Discount_is_50_on_Tuesdays_UsingImpl;
   end;
 
 implementation
@@ -36,7 +36,7 @@ type
   end;
 
 
-procedure TTestTimeProviderFixture.Test_Discount_is_50_on_Tuesdays_UsingImpl;
+procedure TTestTimeProviderFixture.Discount_is_50_on_Tuesdays_UsingImpl;
 var
   mockNow : TDateTime;
   timeProviderMock : ITimeProvider;
@@ -55,7 +55,7 @@ begin
 
 end;
 
-procedure TTestTimeProviderFixture.Test_Discount_is_50_on_Tuesdays_UsingMock;
+procedure TTestTimeProviderFixture.Discount_is_50_on_Tuesdays_UsingMock;
 var
   mockNow : TDateTime;
   timeProviderMock : TMock<ITimeProvider>;

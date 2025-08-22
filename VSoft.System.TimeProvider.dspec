@@ -1,11 +1,12 @@
 {
  "metadata": {
   "id": "VSoft.System.TimeProvider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This simple unit provides an abstraction over TDateTime.Now and TDateTime.NowUTC that makes it easier to write testable code.",
   "authors": "Vincent Parrett",
   "projectUrl": "https://github.com/VSoftTechnologies/VSoft.System.TimeProvider",
   "repositoryUrl": "https://github.com/VSoftTechnologies/VSoft.System.TimeProvider",
+  "repositoryCommit": "#HASH#",
   "license": "Apache-2.0",
   "copyright": "Vincent Parret",
   "tags": "datetime testing",
@@ -75,6 +76,11 @@
   {
    "compiler": "12.0",
    "platforms": "Win32, Win64, OSX64, OSXARM64, LinuxIntel64",
+   "template": "default"
+  },
+  {
+   "compiler": "13.0",
+   "platforms": "Win32, Win64",
    "template": "default"
   }
  ],
