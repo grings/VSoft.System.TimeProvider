@@ -1,0 +1,32 @@
+# DPM package spec file
+# Used to build packages
+
+min client version: 1.0
+# metadata describes the package to the user
+metadata:
+  id: VSoft.System.TimeProvider
+  version: 1.0.1
+  authors: [ Vincent Parrett ]
+  description: This simple unit provides an abstraction over TDateTime.Now and TDateTime.NowUTC that makes it easier to write testable code.
+  projectUrl: https://github.com/VSoftTechnologies/VSoft.System.TimeProvider
+  repositoryUrl: https://github.com/VSoftTechnologies/VSoft.System.TimeProvider
+  license: Apache-2.0
+  readme: README.md
+  copyright: Vincent Parrett and contributors
+  tags: [ datetime, testing ]
+  repositoryCommit: Id:e74c559183f43ad1239efc737f92c48decdfe331
+
+targetPlatforms:
+  - compiler from: delphixe2
+    compiler to: delphi13
+    platforms: [ win32, win64 ]
+
+templates:
+  - name: default
+    source:
+      - src: ./LICENSE
+      - src: ./source/*.pas
+      - src: ./packages/*.dpk
+      - src: ./packages/*.dproj
+    build:
+      - project: ./packages/VSoft.System.TimeProvider.dproj
