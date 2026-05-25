@@ -1,4 +1,4 @@
-package VSoft.System.TimeProvider;
+﻿package VSoft.System.TimeProvider;
 
 {$R *.res}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
@@ -25,12 +25,13 @@ package VSoft.System.TimeProvider;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$IMPLICITBUILD ON}
+{$LIBSUFFIX '180'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl;
 
 contains
-  VSoft.System.TimeProvider in '..\source\VSoft.System.TimeProvider.pas';
-
+  VSoft.System.TimeProvider in '..\..\source\VSoft.System.TimeProvider.pas';
 end.

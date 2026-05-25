@@ -16,9 +16,12 @@ metadata:
   tags: [ datetime, testing ]
   repositoryCommit: Id:e74c559183f43ad1239efc737f92c48decdfe331
 
+variables:
+  packageSource: "Rad Studio $compilernoprefix$"
+
 targetPlatforms:
   - compiler from: delphixe2
-    compiler to: delphi13
+    compiler to: delphi13.0
     platforms: [ win32, win64 ]
 
 templates:
@@ -26,7 +29,7 @@ templates:
     source:
       - src: ./LICENSE
       - src: ./source/*.pas
-      - src: ./packages/*.dpk
-      - src: ./packages/*.dproj
+      - src: ./packages/$packageSource$/*.dpk
+      - src: ./packages/$packageSource$/*.dproj
     build:
-      - project: ./packages/VSoft.System.TimeProvider.dproj
+      - project: ./packages/$packageSource$/VSoft.System.TimeProvider.dproj
